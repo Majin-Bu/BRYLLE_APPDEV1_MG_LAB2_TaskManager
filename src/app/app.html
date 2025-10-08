@@ -10,18 +10,10 @@
           <div class="card-body text-center p-4">
             <h5 class="card-title text-secondary mb-3">Summary</h5>
             
-            <div class="d-flex justify-content-around">
+            <div class="d-flex justify-content-center">
               <div>
-                <p class="mb-1 fw-bold">Total</p>
+                <p class="mb-1 fw-bold">Total Tasks</p>
                 <span class="badge bg-primary fs-6">{{ taskService.getTaskCount() }}</span>
-              </div>
-              <div>
-                <p class="mb-1 fw-bold">Done</p>
-                <span class="badge bg-success fs-6">{{ taskService.getCompletedCount() }}</span>
-              </div>
-              <div>
-                <p class="mb-1 fw-bold">Pending</p>
-                <span class="badge bg-warning text-dark fs-6">{{ taskService.getPendingCount() }}</span>
               </div>
             </div>
           </div>

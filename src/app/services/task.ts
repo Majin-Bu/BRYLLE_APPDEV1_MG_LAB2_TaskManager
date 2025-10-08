@@ -26,13 +26,5 @@ export class TaskService {
   getTaskCount(): number {
     return this.tasks.length;
   }
-
-  getCompletedCount(): number {
-    return this.tasks.filter(t => t.completed).length;
-  }
-
-  getPendingCount(): number {
-    return this.tasks.filter(t => !t.completed).length;
-  }
 }
 
